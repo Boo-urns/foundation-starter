@@ -1,0 +1,28 @@
+{
+  "name": "foundation-starter",
+  "version": "0.0.1",
+  "authors": [
+    "Corey Burns"
+  ],
+  "description": "Starting point for foundation based websites",
+  "main": "/css/styles.min.css",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sass": "~5.5.1",
+    "jquery-legacy": "jquery#^1",
+    "respond": "~1.4.2"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2",
+    "modernizr": "~2.8.3",
+    "foundation": "~5.5.0"
+  }
+}

@@ -1,0 +1,30 @@
+// --------------------- //
+//			 VARIABLES 			 //
+// --------------------- //
+
+@import "variables";
+
+
+
+
+// --------------------- //
+//			FOUNDATION  		 //
+// --------------------- //
+
+// Foundation variables
+// - ~line 223+ for variables to override in 'css/scss/_variables.scss'
+
+@import "bower_components/foundation-sass/scss/foundation/components/global";
+
+
+// Foundation Components
+// - add or remove other foundation components as needed.
+
+@import "bower_components/foundation-sass/scss/foundation/components/button-groups";
+@import "bower_components/foundation-sass/scss/foundation/components/buttons";
+@import "bower_components/foundation-sass/scss/foundation/components/grid";
+@import "bower_components/foundation-sass/scss/foundation/components/offcanvas";
+@import "bower_components/foundation-sass/scss/foundation/components/visibility";
+
+
+
