@@ -6,16 +6,12 @@ Bower as a Package Manager and Grunt tasks to get moving fast
 
 ##Installation
 - Clone this repo
-- cd foundation-starter
+-- git clone https://github.com/Boo-urns/foundation-starter.git
+- cd foundation-starter (feel free to rename folder)
 - npm install
 - bower install
-- grunt init (to copy js files over to js/build)
+- grunt init (copy js files over to js/build and create styles.min.css)
+-- if you get an error pointing to line 13 functions.scss go to bower_components/foundation-sass/foundation/_functions.scss  **remove *!global* **on line 13 and line 17
 - grunt
--- if you get an error looking at line 13 functions go to bower_components/foundation-sass/foundation/_functions.scss and remove *!global* on line 13 and line 17
 
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+Happy coding! 
