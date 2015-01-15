@@ -2,6 +2,10 @@
 //			 VARIABLES 			 //
 // --------------------- //
 
+// - look around ~line 223+ in 
+// foundation-sass/scss/foundation/components/global 
+// for variables you can override
+
 @import "variables";
 
 
@@ -12,9 +16,13 @@
 // --------------------- //
 
 // Foundation variables
-// - ~line 223+ for variables to override in 'css/scss/_variables.scss'
 
 @import "bower_components/foundation-sass/scss/foundation/components/global";
+
+
+// Foundation grid
+
+@import "bower_components/foundation-sass/scss/foundation/components/grid";
 
 
 // Foundation Components
@@ -22,9 +30,18 @@
 
 @import "bower_components/foundation-sass/scss/foundation/components/button-groups";
 @import "bower_components/foundation-sass/scss/foundation/components/buttons";
-@import "bower_components/foundation-sass/scss/foundation/components/grid";
+@import "bower_components/foundation-sass/scss/foundation/components/forms";
 @import "bower_components/foundation-sass/scss/foundation/components/offcanvas";
+@import "bower_components/foundation-sass/scss/foundation/components/panels";
 @import "bower_components/foundation-sass/scss/foundation/components/visibility";
 
 
 
+
+// --------------------- //
+//		 CUSTOM STYLES  	 //
+// --------------------- //
+
+// Sass will include all files into one 
+// so it's best to stay lean and create 
+// section or component based sass files to be included below.
