@@ -23,33 +23,35 @@ module.exports = function(grunt) {
       },
     },*/
     copy: {
-      main: 
-        // Foundation
-        {
-          src: 'bower_components/foundation/js/foundation.min.js',
-          dest: 'js/build/foundation.min.js',
-        },
-        // jQuery
-        {
-          src: 'bower_components/jquery-legacy/dist/jquery.min.js',
-          dest: 'js/build/jquery.min.js',
-        },
-        // HTML5Shiv
-        {
-          src: 'bower_components/html5shiv/html5shiv.min.js',
-          dest: 'js/build/html5shiv.min.js'
-        },
-        // Respond JS
-        {
-          src: 'bower_components/respond/dest/respond.min.js',
-          dest: 'js/build/respond.js'
-        },
-        // Modernizr
-        {
-          src: 'bower_components/modernizr/modernizr.js',
-          // Initially the custom modernizr will be ALL of modernizr.
-          dest: 'js/build/modernizr-custom.js'
-        }
+      main: {
+        files: [
+          // Foundation
+          {
+            src: 'bower_components/foundation/js/foundation.min.js',
+            dest: 'js/build/foundation.min.js',
+          },
+          // jQuery
+          {
+            src: 'bower_components/jquery-legacy/dist/jquery.min.js',
+            dest: 'js/build/jquery.min.js',
+          },
+          // HTML5Shiv
+          {
+            src: 'bower_components/html5shiv/html5shiv.min.js',
+            dest: 'js/build/html5shiv.min.js'
+          },
+          // Respond JS
+          {
+            src: 'bower_components/respond/dest/respond.min.js',
+            dest: 'js/build/respond.js'
+          },
+          // Modernizr
+          {
+            src: 'bower_components/modernizr/modernizr.js',
+            // Initially the custom modernizr will be ALL of modernizr.
+            dest: 'js/build/modernizr-custom.js'
+          }
+        ]
       },
     },
 
@@ -158,6 +160,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-autoprefixer');
