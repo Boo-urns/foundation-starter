@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    
     autoprefixer: {
         dist: {
             options: {
@@ -12,6 +13,7 @@ module.exports = function(grunt) {
             }
         }
     },
+   
     /*concat: {
       basic: {
         src: ['js/html5shiv.js', 'js/respond.js'],
@@ -22,6 +24,7 @@ module.exports = function(grunt) {
         dest: 'js/build/jquery-bootstrap.js',
       },
     },*/
+    
     copy: {
       main: {
         files: [
@@ -78,6 +81,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+    
     modernizr: {
 
       dist: {
@@ -121,6 +125,7 @@ module.exports = function(grunt) {
       }
 
     },
+    
     sass: {
       options: {
         sourceMap: true
@@ -131,15 +136,16 @@ module.exports = function(grunt) {
         }        
       }
     },
+    
     // Project configuration.
     uglify: {
       my_target: {
         files: {
-          'js/build/shiv-respond.min.js': ['js/build/shiv-respond.js'],
-          'js/build/jquery-bootstrap.min.js': ['js/build/jquery-bootstrap.js']
+          /*'js/build/shiv-respond.min.js': ['js/build/shiv-respond.js'],*/
         }
       }
     },
+
     watch: {
       options: {
                 livereload: true
@@ -172,5 +178,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('images', ['imagemin']);
   grunt.registerTask('build-modernizr', ['modernizr:dist']);
-  grunt.registerTask('init', ['copy']);
+  grunt.registerTask('init', ['copy', 'sass', 'autoprefixer', 'csso']);
 }
