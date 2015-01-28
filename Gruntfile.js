@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     autoprefixer: {
         dist: {
             options: {
-              browsers: ['last 2 version', 'ie 8', 'ie 9', 'Firefox > 20'],
+              browsers: ['last 2 version', 'ie 8', 'ie 9', 'Firefox > 20', 'Safari > 5'],
               flatten: true
             },
             files: {
@@ -163,15 +163,17 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks("grunt-modernizr");
+  grunt.loadNpmTasks('grunt-sass');
 
   // REGISTER TASKS
   grunt.registerTask('concatJS', ['concat', 'uglify']);
